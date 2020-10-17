@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>login</title>
 </head>
+<style type="text/css">
+	
+	form{
+		text-align: center;
+		padding: 20%;
+	}
+
+</style>
+
+
+<link href="<?php echo base_url('assets/bootstrap/css/bootstrap.min.css')?>" rel="stylesheet">
 <body>
-	<form action="<?php echo site_url('login/aksi_login/'); ?>" method="post">		
-		<table>
-			<tr>
-				<td>Username</td>
-				<td><input type="text" name="username"></td>
-			</tr>
-			<tr>
-				<td>Password</td>
-				<td><input type="password" name="password"></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td><input type="submit" value="Login"></td>
-			</tr>
-		</table>
+	<span style="opacity: 0.3;">Username & Password = admin</span>
+	<form action="<?php echo site_url('login/aksi_login/');?>" method="post">		
+			Username
+			<input type="text" name="username">
+			<br>
+			Password
+			<input type="password" name="password">
+			<br>
+			<input type="submit" value="Login">
 	</form>
 </body>
 </html>

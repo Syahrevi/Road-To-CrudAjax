@@ -29,7 +29,7 @@
         <tr>
           <th>First Name</th>
           <th>Last Name</th>
-          <th>Gender</th>
+          <th>Kelamin</th>
           <th>Address</th>
           <th>Date of Birth</th>
           <th style="width:125px;">Action</th>
@@ -50,6 +50,8 @@
       </tfoot>
     </table>
 	
+   <a href="<?php echo base_url('index.php/login/logout')?>">Click Here To Log Out</a>
+
   </div>
 
   <script src="<?php echo base_url('assets/jquery/jquery-2.1.4.min.js')?>"></script>
@@ -162,7 +164,7 @@
 
     function delete_person(id)
     {
-      if(confirm('Are you sure delete this data?'))
+      if(confirm('u sure?'))
       {
         // ajax delete data to database
           $.ajax({
